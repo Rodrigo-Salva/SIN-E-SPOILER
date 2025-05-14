@@ -1,10 +1,16 @@
-// components/MovieCard.jsx
-import React from 'react';
+
+import React, { useState } from 'react';
 import Rating from './Rating';
 import ShowtimeSelector from './ShowtimeSelector';
 
 const MovieCard = ({ movie }) => {
   const { title, rating, genre, duration, image, description, showTimes } = movie;
+  const [imageError, setImageError] = useState(false);
+  
+  // Maneja el error de carga de imagen
+  const handleImageError = () => {
+    setImageError(true);
+  };
 
   const handleShowtimeSelect = (time) => {
     alert(`Has seleccionado ${time} para ${title}`);
@@ -13,11 +19,17 @@ const MovieCard = ({ movie }) => {
   return (
     <article className="card card--movie">
       <div className="card__header">
-        <img 
-          src={image} 
-          alt={`${title} poster`}
-          className="card__image"
-        />
+        <div 
+          className={`card__image-container ${imageError ? 'image-error' : ''}`}
+          data-title={title}
+        >
+          <img 
+            src={image}
+            alt={`${title} poster`}
+            className="card__image"
+            onError={handleImageError}
+          />
+        </div>
         <div className="card__overlay">
           <span className="card__badge c-primary">{genre}</span>
         </div>
@@ -43,5 +55,3 @@ const MovieCard = ({ movie }) => {
     </article>
   );
 };
-
-export default MovieCard;

@@ -16,7 +16,10 @@ const App = () => {
   // Estado de navegación
   const [section, setSection] = useState("movies");
 
-  // Datos de las películas 
+  // Definir imagen placeholder
+  const placeholder = "https://via.placeholder.com/300x450/FFFFFF/000000?text=Sin+imagen";
+
+  // Datos de las películas
   const movies = [
     {
       id: 1,
@@ -24,7 +27,7 @@ const App = () => {
       rating: 4.5,
       genre: "Sci-Fi",
       duration: "169 min",
-      image: "https://via.placeholder.com/300x450/234B96/FEFEFE?text=Interstellar",
+      image: "https://via.placeholder.com/300x450/234B96/FEFEFE?text=Interstellar", // Cambia esta URL si no hay imagen
       description: "A team of explorers travel through a wormhole in space.",
       showTimes: ["2:30 PM", "5:45 PM", "9:00 PM"]
     },
@@ -34,7 +37,7 @@ const App = () => {
       rating: 4.8,
       genre: "Thriller",
       duration: "148 min",
-      image: "https://via.placeholder.com/300x450/23B5E8/FEFEFE?text=Inception",
+      image: "", // Imagen vacía para probar el placeholder
       description: "A skilled thief enters people's dreams to steal secrets.",
       showTimes: ["1:00 PM", "4:15 PM", "7:30 PM", "10:45 PM"]
     },
@@ -44,7 +47,7 @@ const App = () => {
       rating: 4.7,
       genre: "Action",
       duration: "136 min",
-      image: "https://via.placeholder.com/300x450/23B58B/FEFEFE?text=Matrix",
+      image: "https://via.placeholder.com/300x450/23B58B/FEFEFE?text=Matrix", // Cambia esta URL si no hay imagen
       description: "A computer hacker learns about the true nature of reality.",
       showTimes: ["3:00 PM", "6:15 PM", "9:30 PM"]
     }
@@ -82,7 +85,12 @@ const App = () => {
             <Hero />
             <GenreFilter genres={genres} activeGenre={activeGenre} onGenreChange={setActiveGenre} />
             <MovieSearch onSearch={setSearch} />
-            <MovieList movies={filteredMovies} onSelectShowtime={setSelectedShowtime} />
+            <MovieList 
+              movies={filteredMovies} 
+              onSelectShowtime={setSelectedShowtime} 
+              placeholder={placeholder}
+              selectedShowtime={selectedShowtime} // Pasamos el estado para seleccion de horario
+            />
           </>
         )}
         {section === "coming-soon" && (

@@ -5,7 +5,7 @@ const MovieSearch = ({ onSearch }) => {
     <div className="movie-search">
       <input
         type="text"
-        placeholder="Search movies..."
+        placeholder="Buscar películas..."
         className="search__input"
         onChange={(e) => onSearch(e.target.value)}
       />

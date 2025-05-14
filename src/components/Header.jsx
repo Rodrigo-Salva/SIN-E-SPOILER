@@ -3,7 +3,7 @@ import React from 'react';
 const Header = ({ section, onNav }) => {
   return (
     <header className="header">
-      <nav className="nav container">
+      <nav className="nav ">
         <div className="nav__wrapper d-flex a-items-center j-content-between">
           <a href="/" className="nav__logo">
             <h1 className="nav__title c-primary">Sin E Spoiler 🎬</h1>

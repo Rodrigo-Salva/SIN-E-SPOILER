@@ -1,0 +1,20 @@
+.c-primary { color: #234B96 !important; }
+.c-secondary { color: #23B5E8 !important; }
+.c-white { color: #fff !important; }
+.d-flex { display: flex !important; }
+.a-items-center { align-items: center !important; }
+.j-content-center { justify-content: center !important; }
+.j-content-between { justify-content: space-between !important; }
+.g-4 { gap: 2rem !important; }
+.g-1 { gap: 0.5rem !important; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}

@@ -86,10 +86,12 @@ const App = () => {
           </>
         )}
         {section === "coming-soon" && (
-          <section style={{textAlign: "center", margin: "2rem"}}><h2>Próximamente...</h2></section>
+          <section style={{textAlign: "center", margin: "2rem"}}>
+            <h2>Próximamente...</h2>
+          </section>
         )}
         {section === "promotions" && (
-          <div style={{display: "flex", justifyContent: "center"}}>
+          <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
             <PromoBanner promo={promo} />
           </div>
         )}

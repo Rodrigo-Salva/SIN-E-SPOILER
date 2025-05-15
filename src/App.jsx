@@ -27,7 +27,7 @@ const App = () => {
       rating: 4.5,
       genre: "Sci-Fi",
       duration: "169 min",
-      image: "https://via.placeholder.com/300x450/234B96/FEFEFE?text=Interstellar", // Cambia esta URL si no hay imagen
+      image: "https://irs.www.warnerbroslatino.com/keyart-jpeg/movies/media/browser/interstellar_v_dd_ka_tt_2000x3000_300dpi_mx.jpg", // Cambia esta URL si no hay imagen
       description: "A team of explorers travel through a wormhole in space.",
       showTimes: ["2:30 PM", "5:45 PM", "9:00 PM"]
     },
@@ -37,7 +37,7 @@ const App = () => {
       rating: 4.8,
       genre: "Thriller",
       duration: "148 min",
-      image: "", // Imagen vacía para probar el placeholder
+      image: "http://i0.wp.com/i37.photobucket.com/albums/e83/cazador_de_opio/inception-poster.jpg", // Imagen vacía para probar el placeholder
       description: "A skilled thief enters people's dreams to steal secrets.",
       showTimes: ["1:00 PM", "4:15 PM", "7:30 PM", "10:45 PM"]
     },
@@ -47,7 +47,7 @@ const App = () => {
       rating: 4.7,
       genre: "Action",
       duration: "136 min",
-      image: "https://via.placeholder.com/300x450/23B58B/FEFEFE?text=Matrix", // Cambia esta URL si no hay imagen
+      image: "https://m.media-amazon.com/images/I/613ypTLZHsL._AC_UF894,1000_QL80_.jpg", // Cambia esta URL si no hay imagen
       description: "A computer hacker learns about the true nature of reality.",
       showTimes: ["3:00 PM", "6:15 PM", "9:30 PM"]
     }

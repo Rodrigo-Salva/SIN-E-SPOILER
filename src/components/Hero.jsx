@@ -1,4 +1,3 @@
-// components/Hero.jsx - Hero section with featured content
 import React from 'react';
 
 const Hero = () => {
@@ -8,12 +7,12 @@ const Hero = () => {
         <h1 className="hero__title">
           Watch Without Spoilers
         </h1>
-        <p className="hero__paragraph c-secondary">
+        <p className="hero__paragraph">
           Experience movies the way they're meant to be seen. 
           AI-powered reviews that preserve the magic.
         </p>
         
-        <div className="hero__cta d-flex j-content-center g-4">
+        <div className="hero__cta">
           <button className="btn btn--primary">
             Browse Movies
           </button>
@@ -27,4 +26,3 @@ const Hero = () => {
 };
 
 export default Hero;
-    
